@@ -20,7 +20,7 @@ Element.addMethods({
 		url = url.strip();
 		var offset = url.indexOf(" ");
 		if(offset > 0){
-			var selector = url.slice(offset,url.length);
+			var selector = url.slice(offset,url.length).trim();
 			url = url.slice(0,offset);
 		}
 		if(Object.isFunction(params.onComplete)){
